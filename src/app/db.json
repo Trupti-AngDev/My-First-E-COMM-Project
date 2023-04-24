@@ -74,6 +74,12 @@
       "password": "",
       "email": "",
       "id": 14
+    },
+    {
+      "name": "chinu",
+      "password": "chinu123",
+      "email": "chinu@test.com",
+      "id": 15
     }
   ]
 }
