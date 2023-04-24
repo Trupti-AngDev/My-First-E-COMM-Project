@@ -1,0 +1,79 @@
+{
+  "seller": [
+    {
+      "id": 1
+    },
+    {
+      "{\n    'name':'trupti',\n    'password':'abc@123'\n}": "",
+      "id": 2
+    },
+    {
+      "{\n    'name':'trupti',\n    'password':'abc@123'\n}\n{\n    name: tru,\n    password:abc@123\n}": "",
+      "id": 3
+    },
+    {
+      "{\n    'name':'trupti',\n    'password':'abc@123'\n}\n{\n    name: tru,\n    password:abc@123\n}\n{\n    \"name\":\"chinu\",\n    \"password\":\"abc@123\"\n}": "",
+      "id": 4
+    },
+    {
+      "name": "shiv",
+      "password": "abc@123",
+      "email": "",
+      "id": 5
+    },
+    {
+      "name": "shiv",
+      "password": "shiv@123",
+      "email": "",
+      "id": 6
+    },
+    {
+      "name": "peter",
+      "password": "peter@123",
+      "email": "peter@123.com",
+      "id": 7
+    },
+    {
+      "name": "bruce",
+      "password": "bruce@123",
+      "email": "bruce@123.com",
+      "id": 8
+    },
+    {
+      "name": "ram",
+      "password": "ram123",
+      "email": "ram@test.com",
+      "id": 9
+    },
+    {
+      "name": "alena",
+      "password": "123",
+      "email": "alena@text.com",
+      "id": 10
+    },
+    {
+      "name": "shiv",
+      "password": "shiv123",
+      "email": "shiv@test.com",
+      "id": 11
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 12
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 13
+    },
+    {
+      "name": "",
+      "password": "",
+      "email": "",
+      "id": 14
+    }
+  ]
+}
