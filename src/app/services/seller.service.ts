@@ -11,6 +11,7 @@ export class SellerService {
    isSellerLoggedIn= new BehaviorSubject<boolean>(false)
    isloginerror= new EventEmitter<boolean>(false)
   constructor(private http:HttpClient, private router:Router) { }
+  
   userSignUP(data:signUp){
     //console.log('service called');
     return this.http.post('http://localhost:3000/seller',data,

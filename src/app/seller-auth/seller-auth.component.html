@@ -1,7 +1,7 @@
 <div class="seller-auth" id="signUp">
     <div class="signup" *ngIf="showSignUp">
         <h1>Seller sign-Up</h1>
-        <form #sellerSignUp="ngForm" class="common-form" (ngSubmit)="signUp(sellerSignUp.value)">
+        <form #sellerSignUp="ngForm" class="common-form" (ngSubmit)="SignUp(sellerSignUp.value)">
             <input type="text" class="form-control" ngModel placeholder="Enter Name" name="name">
             <input type="password" class="form-control" ngModel placeholder="Enter Password" name="password">
             <input type="email"  class="form-control" ngModel placeholder="Enter Email" name="email">

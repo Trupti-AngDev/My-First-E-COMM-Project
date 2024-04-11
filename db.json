@@ -1,0 +1,16 @@
+{
+  "seller": [
+    {
+      "username": "shiv",
+      "email": "shiv@test.com",
+      "password": "shiv@123",
+      "id": 1
+    },
+    {
+      "name": "tru",
+      "password": "tru@!23",
+      "email": "tru@test.com",
+      "id": 2
+    }
+  ]
+}
