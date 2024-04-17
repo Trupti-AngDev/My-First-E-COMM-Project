@@ -1,0 +1,27 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Adjust as needed */
+  }
+  
+h2{
+    text-align: center;
+    margin-top: -2em;
+    color: blueviolet;
+}
+  
+table{
+    text-align: center;
+    color: blueviolet;
+    margin-top: 2em;
+}
+table td, table th{
+    border: 1px solid blueviolet;
+    padding: 10px;
+    height: 50px;
+}
+img{
+    width: 100px;
+    height: 100px;
+}

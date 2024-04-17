@@ -1,1 +1,30 @@
-<p>seller-add-product works!</p>
+<!-- <div class="add-product">
+    <h2>Add New Product</h2> 
+    <p class="p-message">{{addProductMessage}}</p>
+    <form  #addProduct="ngForm" class="common-form" (ngSubmit)="submitProduct(addProduct.value)">
+        <input type="text" class="form-control" ngModel placeholder="Enter Product Name" name="name">
+        <input type="text" class="form-control" ngModel placeholder="Enter Product Price" name="price">
+        <input type="text"  class="form-control" ngModel placeholder="Enter Product Color" name="color">
+        <input type="text"  class="form-control" ngModel placeholder="Enter Product Category" name="category">
+        <textarea type="text"  class="form-control" ngModel placeholder="Enter Product Description" name="description"></textarea>
+        <input type="text"  class="form-control" ngModel placeholder="Enter Product Image Url " name="url">
+        <button class="form-button">Add Product</button>
+    </form>
+</div> -->
+<div class="add-product">
+    <h2>Add New Product</h2> 
+    <p class="p-message">{{addProductMessage}}</p>
+    <form [formGroup]="addProductForm" class="common-form" (ngSubmit)="submitProduct()">
+        <span class="error-message" *ngIf="Name && Name.invalid && Name.touched ">*Required Field</span>
+         <input type="text" class="form-control"  placeholder="Enter Product Name" name="name" formControlName="name"> 
+         <span  class="error-message" *ngIf="Price && Price.invalid && Price.touched ">*Required Field</span> 
+        <input type="text" class="form-control" placeholder="Enter Product Price" name="price" formControlName="price">
+        <span  class="error-message" *ngIf="Color && Color.invalid && Color.touched ">*Required Field</span> 
+        <input type="text"  class="form-control"  placeholder="Enter Product Color" name="color" formControlName="color">
+        <span  class="error-message" *ngIf="Category && Category.invalid && Category.touched ">*Required Field</span> 
+        <input type="text"  class="form-control"  placeholder="Enter Product Category" name="category" formControlName="category">
+        <textarea type="text"  class="form-control"  placeholder="Enter Product Description" name="description" formControlName="description"></textarea>
+        <input type="text"  class="form-control"  placeholder="Enter Product Image Url " name="url" formControlName="image">
+        <button type="submit" [disabled]="addProductForm.invalid">Add Product</button>
+    </form>
+</div>

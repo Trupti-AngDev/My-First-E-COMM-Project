@@ -9,6 +9,7 @@ import { login, signUp } from '../datatype';
 })
 export class SellerAuthComponent {
   authError:string='';
+  showLogin= false;
   constructor(private seller: SellerService) {}
   ngOnInit():void{
  this.seller.reloadseller()
@@ -19,19 +20,26 @@ export class SellerAuthComponent {
     //console.log(data);
     this.seller.userSignUP(data)
   }
-  openLogin(){
-  const login= document.getElementById('login');
-  if(login!=null){
-    login.style.display='block';
-    this.showSignUp=false
-  }
-  }
-  openSignUp(){
-   this.showSignUp=true
-   const login= document.getElementById('login');
-   if(login!=null){
-     login.style.display='none';
-  }
+//   openLogin(){
+//   const login= document.getElementById('login');
+//   if(login!=null){
+//     login.style.display='block';
+//     this.showSignUp=false
+//   }
+//   }
+//   openSignUp(){
+//    this.showSignUp=true
+//    const login= document.getElementById('login');
+//    if(login!=null){
+//      login.style.display='none';
+//   }
+// }
+openLogin(){
+this.showLogin= true
+}
+
+openSignUp(){
+  this.showLogin= false
 }
 
 login(data:login):void{
