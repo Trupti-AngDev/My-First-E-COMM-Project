@@ -25,3 +25,7 @@ img{
     width: 100px;
     height: 100px;
 }
+p{
+    color: green;
+    text-align: center;
+}
