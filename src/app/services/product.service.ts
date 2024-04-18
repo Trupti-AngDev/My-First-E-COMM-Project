@@ -20,4 +20,11 @@ export class ProductService {
   softDeleteProduct(productId: number): Observable<any> {
     return this.http.patch(`${this.apiurl}/${productId}`, { status: 'deleted' });
   }
+  updateProduct(productId:string,productData:object){
+    return this.http.put<product>(`http://localhost:3000/products/${productId}`,productData)
+  }
+  getProduct(id:string){
+    return this.http.get<product>(`http://localhost:3000/products/${id}`)
+  }
+
 }

@@ -29,3 +29,9 @@ p{
     color: green;
     text-align: center;
 }
+.deleteButton{
+    color: red;
+}
+button{
+ margin: 2px;
+}

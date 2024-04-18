@@ -15,34 +15,18 @@
   ],
   "products": [
     {
-      "name": "peter",
-      "price": "100000",
-      "color": "blue",
-      "category": "mobile",
-      "description": "",
-      "image": "https://www.standardelectricals.com/Standard/media/content/dam/standard/Fans/Ceiling-Fans/Decorative/decorative-cover.png",
+      "name": "iphone 14 plus",
       "id": 1,
       "status": "deleted"
     },
     {
-      "name": "Advik ",
-      "price": "100000",
-      "color": "blue",
-      "category": "stationary",
-      "description": "",
-      "image": "https://www.standardelectricals.com/Standard/media/content/dam/standard/Fans/Ceiling-Fans/Decorative/decorative-cover.png",
-      "id": 2,
-      "status": "deleted"
-    },
-    {
-      "name": "Advik ",
-      "price": "50000",
-      "color": "blue",
+      "name": "oppo ",
+      "price": "5000",
+      "color": "white",
       "category": "mobile",
-      "description": "",
-      "image": "",
-      "id": 3,
-      "status": "deleted"
+      "description": "Very smart ",
+      "image": "data:image/jpeg;base64,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",
+      "id": 2
     }
   ]
 }

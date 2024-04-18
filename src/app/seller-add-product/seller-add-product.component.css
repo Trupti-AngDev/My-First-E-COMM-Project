@@ -11,4 +11,8 @@ h2{
     display:inline-flex
   
 }
+button{
+    margin-left: 1em;
+    width:100%
+}
 
