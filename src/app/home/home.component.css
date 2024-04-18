@@ -1,0 +1,16 @@
+img{
+    margin-left: 23%;
+
+}
+.carousel-control-prev{
+    margin-left: 20%;
+  }
+  .carousel-control-next{
+    margin-right: 30%;
+  }
+  #carouselExample .carousel-inner img {
+    object-fit: contain;
+    margin-top: 5%;
+  }
+
+  
