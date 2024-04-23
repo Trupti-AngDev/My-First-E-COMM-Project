@@ -1,16 +1,71 @@
 img{
     margin-left: 23%;
-
+   
 }
 .carousel-control-prev{
-    margin-left: 20%;
+    background-color: blueviolet;
+    width: max-content;
+    height: max-content;
+    margin-top: 25%;
+    margin-left: 15%;
+
   }
   .carousel-control-next{
-    margin-right: 30%;
+    background-color: blueviolet;
+    width: max-content;
+    height: max-content;
+    margin-top: 25%;
+    margin-right: 20%;
+
   }
   #carouselExample .carousel-inner img {
     object-fit: contain;
     margin-top: 5%;
+    height: 500px;
   }
 
-  
+  .carousel-caption{
+    background-color:rgba(127, 13, 234, 0.7);
+    width: max-content;
+    border-radius: 10px;
+    padding: 20px;
+    margin-bottom: -1%;
+    animation: slide 2s ease forwards;
+    font-family:cursive, 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+  }
+  @keyframes slide {
+    0% { transform: translateX(-100%); } /* Start position */
+    50% { transform: translateX(100%); } /* End position */
+}
+.product-list-wrapper{
+  margin-top: 5em;
+  margin-bottom: 5em;
+}
+.product-item{
+  border: 1px solid #ddd;
+}
+.product-item img{
+  object-fit: contain;
+  padding: 20px;
+  margin-left: 25px;
+  width: 200px;
+  height: 200px;
+}
+.product-item .product-details{
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  text-align: center;
+  padding: 10px;
+}
+.name-head{
+  font-size: 20px;
+  font-weight: 600;
+}
+.product-footer{
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+.col-sm-3{
+  margin-top: 30px;
+}

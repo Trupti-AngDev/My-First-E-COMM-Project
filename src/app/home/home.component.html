@@ -1,15 +1,46 @@
 <div id="carouselExample" class="carousel slide">
-    <div class="carousel-inner" *ngIf="popularProducts">
-      <div class="carousel-item active" *ngFor="let item of popularProducts; let i = index;" [class.active]="i === 2">
-        <img src="{{item.image}}" class="d-block w-50 " alt="...">
+  <div class="carousel-inner" *ngIf="popularProducts">
+    <div class="carousel-item active" *ngFor="let item of popularProducts; let i = index;" [class.active]="i === 2">
+      <img src="{{item.image}}" class="d-block w-50 " alt="...">
+      <div class="carousel-caption">
+        <h2>{{item.name}}</h2>
+        <p>{{item.description}}</p>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
   </div>
+
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+<div class="product-list-wrapper">
+  <h1>Trendy Products</h1>
+  <div class="row">
+    <div class="col-sm-3" *ngFor="let item of trendyProducts">
+      <div class="product-item">
+        <img
+          src="{{item.image}}">
+        <div class="product-details">
+          <h6 class="name-head">{{item.name}}</h6>
+          <div class="product-price">
+            <h6 class="price">Price: {{item.price}}</h6>
+          </div>
+          <div class="product-color">
+            <h6>Color: {{item.color}}</h6>
+          </div>
+        </div>
+        <div class="product-footer">
+          <a href="">View more Details</a>
+          <a href="">Add to Cart</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+
