@@ -12,6 +12,9 @@ import { SellerHomeComponent } from './seller-home/seller-home.component';
 import { SellerAddProductComponent } from './seller-add-product/seller-add-product.component';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { SellerUpdateProductComponent } from './seller-update-product/seller-update-product.component';
+import { SearchComponent } from './search/search.component';
+import { ProductDetailsComponent } from './product-details/product-details.component';
+
 
 @NgModule({
   declarations: [
@@ -21,7 +24,9 @@ import { SellerUpdateProductComponent } from './seller-update-product/seller-upd
     SellerAuthComponent,
     SellerHomeComponent,
     SellerAddProductComponent,
-    SellerUpdateProductComponent
+    SellerUpdateProductComponent,
+    SearchComponent,
+    ProductDetailsComponent
   ],
   imports: [
     BrowserModule,

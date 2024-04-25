@@ -6,15 +6,17 @@
   }
   
 h2{
-    text-align: center;
-    margin-top: 5em;
+    text-align: center !important;
+    margin-top: 8em;
     color: blueviolet;
+    margin-left: 18%;
+    position: absolute;
 }
   
 table{
     text-align: center;
     color: blueviolet;
-    margin-top: 2em;
+    margin-top: 20em;
 }
 table td, table th{
     border: 1px solid blueviolet;

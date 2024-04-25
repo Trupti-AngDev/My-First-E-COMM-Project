@@ -1,0 +1,33 @@
+.color-circle{
+    width: 25px;
+    height: 25px;
+    border: 1px solid black;
+    border-radius: 50%;
+}
+.quantity{
+    margin-top: 10px;
+}
+.quantityNumber{
+    width: 30px;
+    text-align: center;
+    background-color:white;
+}
+.buttons button{
+margin-right: 10px;
+
+}
+.buttons #buyNow{
+    background-color: rgba(138, 43, 226, 0.5); 
+}
+.quantity .btn{
+    background-color: rgba(138, 43, 226, 0.5); 
+}
+.productName{
+    color: blueviolet;
+}
+.col-sm-6{
+    margin-top: 10%;
+}
+.col-sm-6 img{
+    width: 400px;
+}

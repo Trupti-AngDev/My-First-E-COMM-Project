@@ -1,0 +1,17 @@
+
+<div id="item" class="row search-item" *ngIf="searchResult && searchResult.length>0">
+  <div class="col-sm-4" *ngFor="let item of searchResult">
+    <img src="{{item.image}}">
+    <div class="col-sm-8 details">
+      <h6>{{item.name}}</h6>
+      <p><b>price: {{item.price}}</b></p>
+      <p>color: {{item.color}}</p>
+      <p>Category: {{item.category}}</p>
+      <p>Description: {{item.description}}</p>
+      <a routerLink="/details/{{item.id}}">See More Details</a>
+    </div>
+  </div>
+</div>
+<div id="productUnavailable" style="visibility: hidden;">
+    <h1>Sorry, Product is currently unavailable!</h1>
+</div>

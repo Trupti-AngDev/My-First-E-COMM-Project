@@ -1,0 +1,32 @@
+.search-item{
+margin: 25px auto;
+width:1000px;
+border-top: 1px solid #ddd;
+padding: 10px;
+flex-direction:row;
+}
+.search-item img{
+    width: 100%;
+    object-fit: contain;
+    height: 150px;
+    justify-content: center;
+    margin-left: -30px;
+    margin-top: 50px;
+}
+.search-item h6{
+font-size: 24px;
+color: blueviolet;
+text-align: center;
+}
+.search-item p{
+margin: 5px;
+width: max-content;
+text-align: center;
+}
+h1{
+ flex-direction: row;
+ text-align: center;
+ color: blueviolet;  
+ vertical-align: middle;
+ margin-top: 20%;
+} 
