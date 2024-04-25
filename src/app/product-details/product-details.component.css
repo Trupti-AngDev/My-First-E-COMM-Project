@@ -8,7 +8,10 @@
     margin-top: 10px;
 }
 .quantityNumber{
-    width: 30px;
+    width: 80px;
+    height: 35px;
+    border: 1px solid #ddd;
+    border-radius: 2px;
     text-align: center;
     background-color:white;
 }
@@ -16,9 +19,7 @@
 margin-right: 10px;
 
 }
-.buttons #buyNow{
-    background-color: rgba(138, 43, 226, 0.5); 
-}
+
 .quantity .btn{
     background-color: rgba(138, 43, 226, 0.5); 
 }
