@@ -11,6 +11,7 @@ import { product } from '../datatype';
 export class HeaderComponent implements OnInit {
    menutype:string='default';
    sellerName:string='';
+   userName:string ='';
    searchResult: undefined | product[]
   constructor(private route: Router, private product:ProductService){}
 
@@ -20,13 +21,18 @@ export class HeaderComponent implements OnInit {
     if(val.url){
       if(localStorage.getItem('seller')&& val.url.includes('seller') ){
        // console.log('in seller area')
-        this.menutype='seller'
+        this.menutype='seller';
         if(localStorage.getItem('seller')){
           let sellerStore= localStorage.getItem('seller');
           let sellerData= sellerStore && JSON.parse(sellerStore)[0];
           this.sellerName=sellerData.username;
         }
-      }
+      }else if(localStorage.getItem('user')){
+       let userStore = localStorage.getItem('user');
+       let userData = userStore && JSON.parse(userStore);
+        this.userName = userData.name;
+        this.menutype = 'user';
+      } 
       else{
         console.log('outside seller')
         this.menutype='default'
@@ -37,6 +43,10 @@ export class HeaderComponent implements OnInit {
   logout(){
     localStorage.removeItem('seller');
     this.route.navigate(['/']);
+  }
+  userLogout(){
+    localStorage.removeItem('user');
+    this.route.navigate(['/user-auth'])
   }
   searchProduct(event: Event) {
     const target = event.target as HTMLInputElement;

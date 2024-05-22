@@ -12,6 +12,7 @@ display: inline-flex;
 list-style-type: none;
 margin: 0;
 padding: 0;
+cursor: pointer;
 }
 .nav li{
     padding-left: 15px;
